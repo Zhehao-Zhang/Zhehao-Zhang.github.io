@@ -6,3 +6,11 @@
     - "Conducted research on building energy forecasting and control, with an emphasis on performance across buildings and climate domains."
     - "Developed and evaluated time-series models including LSTM, CNN-LSTM, attention-based architectures, transfer learning, and domain adaptation methods."
     - "Contributed to research published in Energy and AI and ACM e-Energy 2026."
+- organization: "Recodeal Interconnect System Co., Ltd."
+  location: "Suzhou, China"
+  role: "Product Manager"
+  period: "January 2023–March 2025"
+  bullets:
+    - "Analyzed market data to inform product roadmaps and market segment priorities, translating insights into quarterly plans with measurable OKRs."
+    - "Built cost-performance dashboards from bill of materials (BOM) and test data to support product and cost decisions."
+    - "Identified cost reduction opportunities through supplier mix optimization, specification adjustments, and product redesign while preserving core functions."
