@@ -1,8 +1,8 @@
 <header class="site-header">
-  <a class="brand" href="{{ "/" | relURL }}">
+  <div class="brand">
     {{ hugo.Data.profile.name }}
     <span>{{ site.Params.tagline }}</span>
-  </a>
+  </div>
   <nav class="primary-nav" aria-label="Primary navigation">
     {{ range site.Menus.main }}
       {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
