@@ -9,7 +9,7 @@ availability: "Open to opportunities in machine learning engineering, applied AI
 about:
   - "I am an MSc student in Artificial Intelligence at Nanyang Technological University (NTU). My work focuses on machine learning for real-world sequential data, particularly exploring practical applications of AI across different domains."
   - "Previously, I worked as a Research Assistant at the Sustainable Computing Laboratory (SusCom Lab), HKUST(GZ), where I studied building energy forecasting and control using LSTM, CNN-LSTM, attention mechanisms, transfer learning, and domain adaptation."
-  - "My broader interests include AI and machine learning for real-world applications. I am also expanding my experience in large language models and natural language processing."
+  - "My broader interests include time-series deep learning, reliable cross-domain generalization, and applied AI, including sustainability-related applications such as energy forecasting. I am also expanding my experience in large language models and natural language processing."
 links:
   - label: "Email"
     url: "mailto:ZHEHAO002@e.ntu.edu.sg"
