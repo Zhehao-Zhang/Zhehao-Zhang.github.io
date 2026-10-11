@@ -1,4 +1,4 @@
 +++
 title = "Home"
-description = "AI for real-world applications."
+description = "Machine learning for reliable real-world systems."
 +++

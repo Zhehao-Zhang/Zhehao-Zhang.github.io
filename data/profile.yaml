@@ -7,8 +7,9 @@ portrait: "images/portrait.png"
 email: "ZHEHAO002@e.ntu.edu.sg"
 availability: "Open to opportunities in machine learning engineering, applied AI, and data science."
 about:
-  - "I am an MSc student in Artificial Intelligence at Nanyang Technological University (NTU). I am interested in applying AI to real-world problems."
-  - "Previously, I worked as a Research Assistant at the Sustainable Computing Laboratory (SusCom Lab), HKUST(GZ), where I gained experience in applied machine learning research."
+  - "I am an MSc student in Artificial Intelligence at Nanyang Technological University (NTU). My work focuses on machine learning for real-world sequential data, particularly exploring practical applications of AI across different domains."
+  - "Previously, I worked as a Research Assistant at the Sustainable Computing Laboratory (SusCom Lab), HKUST(GZ), where I studied building energy forecasting and control using LSTM, CNN-LSTM, attention mechanisms, transfer learning, and domain adaptation."
+  - "My broader interests include AI and machine learning for real-world applications. I am also expanding my experience in large language models and natural language processing."
 links:
   - label: "Email"
     url: "mailto:ZHEHAO002@e.ntu.edu.sg"

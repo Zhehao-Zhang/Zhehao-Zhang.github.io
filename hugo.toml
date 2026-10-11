@@ -5,8 +5,8 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Personal website of Zhang Zhehao, an MSc student in Artificial Intelligence at Nanyang Technological University interested in AI and its real-world applications."
-  tagline = "AI for Real-World Applications"
+  description = "Personal website of Zhang Zhehao, an MSc student in Artificial Intelligence at Nanyang Technological University working on time-series deep learning and applied AI."
+  tagline = "Machine Learning · Time Series · Energy AI"
   lastUpdated = "August 2026"
 
 [[menus.main]]
