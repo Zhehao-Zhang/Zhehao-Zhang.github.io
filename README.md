@@ -24,9 +24,12 @@ Run hugo --gc --minify. The generated site is written to public/, which is inten
 
 ## Publish with GitHub Pages
 
-1. Create a GitHub repository, ideally <username>.github.io.
-2. Push this source repository to the main branch.
-3. In GitHub, open Settings -> Pages and choose GitHub Actions as the source.
-4. The included workflow builds and deploys the site automatically after each push.
+Repository: https://github.com/Zhehao-Zhang/Zhehao-Zhang.github.io
+
+Website: https://zhehao-zhang.github.io/
+
+GitHub Pages uses GitHub Actions as its source. The included workflow builds and deploys the site automatically after each push to main.
+
+To publish future updates, commit your content changes and run git push origin main. Check the Actions tab for the build and deployment status.
 
 A custom domain can be added later from Settings -> Pages.
