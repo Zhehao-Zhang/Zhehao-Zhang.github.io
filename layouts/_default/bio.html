@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <section class="content-section">
+    <p class="eyebrow">Background</p>
+    <h1 class="page-title">Bio</h1>
+    <p class="page-intro">My academic path spans engineering management, applied machine learning, and research on intelligent energy systems.</p>
+
+    <section class="bio-group" aria-labelledby="education-heading">
+      <h2 class="bio-section-heading" id="education-heading">Education</h2>
+      {{ range hugo.Data.education }}
+        <article class="bio-entry">
+          <div class="bio-entry-header">
+            <div>
+              <h2>{{ .institution }}</h2>
+              <p>{{ .location }}</p>
+            </div>
+            <time>{{ .period }}</time>
+          </div>
+          <p class="subtitle">{{ .degree }}</p>
+          <p>{{ .detail }}</p>
+        </article>
+      {{ end }}
+    </section>
+
+    <section class="bio-group" aria-labelledby="experience-heading">
+      <h2 class="bio-section-heading" id="experience-heading">Experience</h2>
+      {{ range hugo.Data.experience }}
+        <article class="bio-entry">
+          <div class="bio-entry-header">
+            <div>
+              <h2>{{ .organization }}</h2>
+              <p>{{ .location }}</p>
+            </div>
+            <time>{{ .period }}</time>
+          </div>
+          <p class="subtitle">{{ .role }}</p>
+          <ul>
+            {{ range .bullets }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </article>
+      {{ end }}
+    </section>
+  </section>
+{{ end }}

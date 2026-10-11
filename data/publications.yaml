@@ -1,0 +1,49 @@
+groups:
+  - label: "2026"
+    items:
+      - type: "Journal Article"
+        title: "On the Robustness of Short-Term Building Energy Forecasting under Cross-Climate Transfer"
+        authors:
+          - name: "Ji Bian"
+          - name: "Zhehao Zhang"
+            self: true
+          - name: "Chunyang Zuo"
+          - name: "Chunxiao Dong"
+          - name: "Hui Liu"
+          - name: "Kaiyuan Zhai"
+          - name: "Guoming Tang"
+        venue: "Energy and AI, Volume 25, 100818, 2026."
+        selected: true
+        links:
+          - label: "Paper"
+            url: "https://www.sciencedirect.com/science/article/pii/S2666546826001448"
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.egyai.2026.100818"
+      - type: "Conference Paper"
+        title: "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction"
+        authors:
+          - name: "Kaiyuan Zhai"
+          - name: "Jiacheng Cui"
+          - name: "Zhehao Zhang"
+            self: true
+          - name: "Junyu Xue"
+          - name: "Yang Deng"
+          - name: "Kui Wu"
+          - name: "Guoming Tang"
+        venue: "Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems (ACM e-Energy 2026), pp. 75–88."
+        selected: true
+        links:
+          - label: "ACM"
+            url: "https://doi.org/10.1145/3744255.3798121"
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2511.06634"
+          - label: "Code"
+            url: "https://github.com/SusCom-Lab/CaberNet-CRL"
+  - label: "Under Review"
+    items:
+      - type: "Manuscript"
+        title: "Meta-FAN"
+        authors_text: "Zhehao Zhang et al."
+        venue: "Manuscript under review. Full title and author list will be added after public disclosure."
+        selected: false
+        links: []

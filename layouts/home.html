@@ -1,0 +1,54 @@
+{{ define "main" }}
+  <section class="content-section intro-section" aria-labelledby="about-heading">
+    <p class="eyebrow">About me</p>
+    <h1 id="about-heading">Machine learning for reliable real-world systems.</h1>
+    {{ range hugo.Data.profile.about }}
+      <p>{{ . }}</p>
+    {{ end }}
+    <div class="availability-note">
+      <span class="status-dot" aria-hidden="true"></span>
+      {{ hugo.Data.profile.availability }}
+    </div>
+  </section>
+
+  <section class="content-section" aria-labelledby="selected-heading">
+    <div class="section-heading-row">
+      <p class="eyebrow">Selected research</p>
+      <a class="text-link" href="{{ "/publications/" | relURL }}">View all publications →</a>
+    </div>
+    <h2 id="selected-heading" class="sr-only">Selected research</h2>
+    <div class="selected-list">
+      {{ range hugo.Data.publications.groups }}
+        {{ $groupLabel := .label }}
+        {{ range .items }}
+          {{ if .selected }}
+            <article class="selected-item">
+              <div class="publication-meta">
+                <span>{{ .type }}</span>
+                <span>{{ $groupLabel }}</span>
+              </div>
+              <h3>{{ .title }}</h3>
+              <p>{{ .venue }}</p>
+            </article>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="content-section" aria-labelledby="news-heading">
+    <div class="section-heading-row">
+      <p class="eyebrow">News</p>
+      <span class="section-count">Latest</span>
+    </div>
+    <h2 id="news-heading" class="sr-only">News</h2>
+    <ol class="news-list">
+      {{ range hugo.Data.news }}
+        <li>
+          <time>{{ .date }}</time>
+          <p>{{ with .url }}<a class="news-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ .text }}{{ with .url }}</a>{{ end }}</p>
+        </li>
+      {{ end }}
+    </ol>
+  </section>
+{{ end }}

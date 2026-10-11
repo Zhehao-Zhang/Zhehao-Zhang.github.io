@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <section class="content-section">
+    <p class="eyebrow">Research output</p>
+    <h1 class="page-title">Publications</h1>
+    <p class="page-intro">Research on building energy forecasting, cross-domain generalization, and data-driven intelligent building systems.</p>
+
+    {{ range hugo.Data.publications.groups }}
+      <section class="publication-group" aria-labelledby="year-{{ .label | anchorize }}">
+        <h2 class="year-heading" id="year-{{ .label | anchorize }}">{{ .label }}</h2>
+        {{ range .items }}
+          <article class="publication-entry">
+            <div class="publication-meta">
+              <span>{{ .type }}</span>
+            </div>
+            <h2>{{ .title }}</h2>
+            {{ with .authors }}
+              <p class="publication-authors">
+                {{ range $index, $author := . }}{{ if $index }}, {{ end }}{{ if $author.self }}<strong>{{ $author.name }}</strong>{{ else }}{{ $author.name }}{{ end }}{{ end }}
+              </p>
+            {{ else }}
+              {{ with .authors_text }}<p class="publication-authors"><strong>{{ . }}</strong></p>{{ end }}
+            {{ end }}
+            <p class="publication-venue">{{ .venue }}</p>
+            {{ with .links }}
+              <div class="publication-links" aria-label="Publication links">
+                {{ range . }}
+                  <a class="publication-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </section>
+    {{ end }}
+  </section>
+{{ end }}

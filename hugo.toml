@@ -1,0 +1,30 @@
+baseURL = "https://example.org/"
+locale = "en-US"
+title = "Zhang Zhehao"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Personal website of Zhang Zhehao, an MSc student in Artificial Intelligence at Nanyang Technological University working on time-series deep learning and applied AI."
+  tagline = "Machine Learning · Time Series · Energy AI"
+  lastUpdated = "August 2026"
+
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Publications"
+  pageRef = "/publications"
+  weight = 20
+
+[[menus.main]]
+  name = "Bio"
+  pageRef = "/bio"
+  weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false

@@ -1,0 +1,8 @@
+- organization: "Sustainable Computing Laboratory (SusCom Lab), HKUST(GZ)"
+  location: "Guangzhou, China"
+  role: "Research Assistant"
+  period: "Prior to NTU"
+  bullets:
+    - "Conducted research on building energy forecasting and control, with an emphasis on performance across buildings and climate domains."
+    - "Developed and evaluated time-series models including LSTM, CNN-LSTM, attention-based architectures, transfer learning, and domain adaptation methods."
+    - "Contributed to research published in Energy and AI and ACM e-Energy 2026."

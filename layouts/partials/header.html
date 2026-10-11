@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="brand" href="{{ "/" | relURL }}">
+    {{ hugo.Data.profile.name }}
+    <span>{{ site.Params.tagline }}</span>
+  </a>
+  <nav class="primary-nav" aria-label="Primary navigation">
+    {{ range site.Menus.main }}
+      {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+      <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>

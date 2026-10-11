@@ -1,0 +1,16 @@
+<aside class="profile-card" aria-label="Profile">
+  <div class="portrait-frame">
+    <img src="{{ hugo.Data.profile.portrait | relURL }}" alt="Portrait of {{ hugo.Data.profile.name }}" width="400" height="500">
+  </div>
+  <div>
+    <h2>{{ hugo.Data.profile.name }}</h2>
+    <p class="native-name">{{ hugo.Data.profile.native_name }}</p>
+    <p class="role">{{ hugo.Data.profile.role }}</p>
+    <p class="affiliation">{{ hugo.Data.profile.affiliation }}</p>
+  </div>
+  <div class="profile-links" aria-label="Profile links">
+    {{ range hugo.Data.profile.links }}
+      <a class="profile-link" href="{{ .url }}"{{ if not (hasPrefix .url "mailto:") }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .label }}</a>
+    {{ end }}
+  </div>
+</aside>
