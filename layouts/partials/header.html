@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="brand">
     {{ hugo.Data.profile.name }}
-    <span>{{ site.Params.tagline }}</span>
+    <span>{{ hugo.Data.profile.native_name }}</span>
   </div>
   <nav class="primary-nav" aria-label="Primary navigation">
     {{ range site.Menus.main }}
