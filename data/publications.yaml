@@ -39,11 +39,11 @@ groups:
             url: "https://arxiv.org/abs/2511.06634"
           - label: "Code"
             url: "https://github.com/SusCom-Lab/CaberNet-CRL"
-  - label: "Under Review"
+  - label: "Accepted"
     items:
-      - type: "Manuscript"
-        title: "Meta-FAN"
+      - type: "Journal Article"
+        title: "Meta-FAN: Building Energy Forecasting via Few-Shot Feature-Wise Adaptation"
         authors_text: "Zhehao Zhang et al."
-        venue: "Manuscript under review. Full title and author list will be added after public disclosure."
+        venue: "Energy. Accepted for publication."
         selected: false
         links: []
