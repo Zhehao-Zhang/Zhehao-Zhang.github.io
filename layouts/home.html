@@ -13,10 +13,10 @@
 
   <section class="content-section" aria-labelledby="selected-heading">
     <div class="section-heading-row">
-      <p class="eyebrow">Selected research</p>
+      <p class="eyebrow">Research</p>
       <a class="text-link" href="{{ "/publications/" | relURL }}">View all publications →</a>
     </div>
-    <h2 id="selected-heading" class="sr-only">Selected research</h2>
+    <h2 id="selected-heading" class="sr-only">Research</h2>
     <div class="selected-list">
       {{ range hugo.Data.publications.groups }}
         {{ $groupLabel := .label }}
