@@ -2,6 +2,25 @@ groups:
   - label: "2026"
     items:
       - type: "Journal Article"
+        title: "Meta-FAN: Building energy forecasting via few-shot feature-wise adaptation"
+        authors:
+          - name: "Zhehao Zhang"
+            self: true
+          - name: "Jiacheng Cui"
+          - name: "Ji Bian"
+          - name: "Chunyang Zuo"
+          - name: "Gengjie Huang"
+          - name: "Guoming Tang"
+        venue: "Energy, Volume 366, 142828, 2026."
+        selected: true
+        links:
+          - label: "Paper"
+            url: "https://www.sciencedirect.com/science/article/pii/S036054422602935X"
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.energy.2026.142828"
+          - label: "Full text"
+            url: "https://authors.elsevier.com/c/1n-7G_8CgJ3KIt"
+      - type: "Journal Article"
         title: "On the Robustness of Short-Term Building Energy Forecasting under Cross-Climate Transfer"
         authors:
           - name: "Ji Bian"
@@ -39,11 +58,3 @@ groups:
             url: "https://arxiv.org/abs/2511.06634"
           - label: "Code"
             url: "https://github.com/SusCom-Lab/CaberNet-CRL"
-  - label: "Accepted"
-    items:
-      - type: "Journal Article"
-        title: "Meta-FAN: Building Energy Forecasting via Few-Shot Feature-Wise Adaptation"
-        authors_text: "Zhehao Zhang et al."
-        venue: "Energy. Accepted for publication."
-        selected: false
-        links: []
