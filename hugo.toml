@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "term"]
   description = "Personal website of Zhang Zhehao, an MSc student in Artificial Intelligence at Nanyang Technological University working on time-series deep learning and applied AI."
   tagline = "Machine Learning · Time Series · Energy AI"
   lastUpdated = "October 2026"
-  googleAnalyticsId = "G-W5BT0QNN4F"
+  cloudflareWebAnalyticsToken = ""
 
 [[menus.main]]
   name = "Home"

@@ -1,16 +1,8 @@
-{{ if and hugo.IsProduction site.Params.googleAnalyticsId }}
-  {{ $measurementId := site.Params.googleAnalyticsId }}
-  {{ if not (findRE "^G-[A-Z0-9]+$" $measurementId) }}
-    {{ errorf "googleAnalyticsId must be a GA4 measurement ID beginning with G-" }}
+{{ if hugo.IsProduction }}
+  {{ $token := site.Params.cloudflareWebAnalyticsToken | default "" }}
+  {{ if and $token (not (findRE "^[a-fA-F0-9]{32}$" $token)) }}
+    {{ errorf "cloudflareWebAnalyticsToken must be a 32-character site token" }}
   {{ end }}
-  <section id="analytics-consent" class="analytics-consent" aria-labelledby="analytics-consent-heading" hidden>
-    <h2 id="analytics-consent-heading">Optional analytics</h2>
-    <p>Allow Google Analytics to measure pages viewed, approximate location and device information? This helps me understand visits to this website. <a href="{{ "/privacy/" | relURL }}">Privacy details</a></p>
-    <div class="analytics-consent-actions">
-      <button type="button" data-analytics-choice="granted">Allow analytics</button>
-      <button type="button" data-analytics-choice="denied">Decline</button>
-    </div>
-  </section>
-  {{ $analytics := resources.Get "js/analytics.js" | minify | fingerprint }}
-  <script id="site-analytics" defer src="{{ $analytics.RelPermalink }}" integrity="{{ $analytics.Data.Integrity }}" data-measurement-id="{{ $measurementId }}"></script>
+  {{ $analytics := resources.Get "js/visit-counter.js" | minify | fingerprint }}
+  <script id="site-analytics" defer src="{{ $analytics.RelPermalink }}" integrity="{{ $analytics.Data.Integrity }}" data-cloudflare-token="{{ $token }}"></script>
 {{ end }}

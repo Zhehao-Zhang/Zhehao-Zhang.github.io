@@ -1,18 +1,20 @@
 +++
 title = "Privacy"
 layout = "privacy"
-description = "Optional visitor analytics and privacy choices for Zhang Zhehao's website."
+description = "Basic visit statistics and the option to exclude this browser from counting."
 +++
 
-## Optional visitor analytics
+## Basic visit statistics
 
-This website uses Google Analytics only after you choose **Allow analytics**. It helps me understand page views, referral sources, approximate location, and basic browser and device information. The site does not send visitors' names or email addresses to Google Analytics. Advertising personalization and Google signals are disabled.
+Cloudflare Web Analytics provides basic statistics such as visits and page views when counting is enabled on this website. These are counts of activity, not an identification of individual people. Google Analytics is no longer used.
 
-When analytics is allowed, Google may use analytics cookies to distinguish visits and browsers. Google processes this information to provide reports about use of the website. Read [how Google uses information from sites that use its services](https://policies.google.com/technologies/partner-sites) and [Google's privacy policy](https://policies.google.com/privacy).
+Cloudflare states that its Web Analytics does not use cookies or local storage to measure visitors and does not fingerprint individuals. Its service also reports page performance and basic categories such as referring sites and countries. Read [Cloudflare's analytics description](https://www.cloudflare.com/web-analytics/) and [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
 
-## Your choice
+## Exclude your own visits
 
-You can decline analytics and continue using the entire website. Your analytics preference is stored in your browser's local storage. You can change it at any time using **Analytics preferences** in the footer. Declining after previously allowing analytics disables further measurement on the page and removes this site's Google Analytics cookies; it does not erase data previously sent to Google.
+You can [exclude this browser from counting](/privacy/?analytics=off), or [include this browser again](/privacy/?analytics=on). The exclusion preference is saved only in this browser and is not sent to Cloudflare. Set it separately on each browser or device you use. Clearing this site's stored data also clears the exclusion preference.
+
+The site removes cookies left by its previous Google Analytics setup. Existing data already sent to Google is not removed by this change.
 
 ## Contact
 
