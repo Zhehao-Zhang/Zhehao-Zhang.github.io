@@ -47,6 +47,7 @@
   if (excluded || !/^[a-fA-F0-9]{32}$/.test(token || '')) return;
   const beacon = document.createElement('script');
   beacon.type = 'module';
-  beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js?token=' + encodeURIComponent(token);
+  beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  beacon.dataset.cfBeacon = JSON.stringify({ token });
   document.head.appendChild(beacon);
 })();
