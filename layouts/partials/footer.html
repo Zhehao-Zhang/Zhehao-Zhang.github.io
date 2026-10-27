@@ -1,4 +1,10 @@
 <footer class="site-footer">
   <span>© {{ now.Year }} {{ hugo.Data.profile.name }}</span>
+  {{ if and hugo.IsProduction site.Params.googleAnalyticsId }}
+    <span class="footer-privacy">
+      <a href="{{ "/privacy/" | relURL }}">Privacy</a>
+      <button type="button" data-analytics-preferences>Analytics preferences</button>
+    </span>
+  {{ end }}
   <span>Last updated: {{ site.Params.lastUpdated }}</span>
 </footer>
